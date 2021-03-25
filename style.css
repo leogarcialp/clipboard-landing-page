@@ -1,0 +1,265 @@
+:root {
+   --strong-cyan: hsl(171, 66%, 44%);
+   --light-blue: hsl(233, 100%, 69%);
+   --dark-grayish-blue: hsl(210, 10%, 33%);
+   --grayish-blue: hsl(201, 11%, 66%)
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1.8rem;
+   font-family: 'Bai Jamjuree', sans-serif;
+}
+
+img {
+   width: 100%;
+}
+
+/* ==================== */
+/* Mobile First */
+header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 33rem;
+   background-image: url('./images/bg-header-mobile.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+/* .header__logo {
+   width: 100%;
+} */
+.header__logo-container {  
+   width: 12.5rem;
+   margin-top: 5rem;
+}
+
+/* main */
+.main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 3rem;
+   margin-right: 3rem;
+   text-align: center;
+}
+
+.main__title {
+   max-width: 15ch;
+   font-size: 3rem;
+   font-weight: 600;
+   color: var(--dark-grayish-blue);
+}
+
+.main__description {
+   width: 30ch;
+   margin-top: 2rem;
+   font-size: 1.6rem;
+   font-weight: 400;
+   line-height: 1.6;
+   color: var(--grayish-blue);
+}
+
+.links {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   width: 100%;
+   margin-top: 4rem;   
+}
+
+.links__btn {
+   padding: 1.5rem;
+   font-weight: 600;
+   background-color: var(--strong-cyan);
+   color: white;
+   text-decoration: none;
+   border-radius: 3rem;
+}
+
+.links__btn--mac {
+   background-color: var(--light-blue);
+}
+
+/* snippets section */
+.snippets {
+   margin-top: 15rem;
+   text-align: center;
+}
+
+.snippets__title {
+   color: var(--dark-grayish-blue);
+}
+
+.snippets__description {
+   width: 30ch;
+   margin-top: 2rem;
+   margin-bottom: 6rem;
+   font-size: 1.6rem;
+   font-weight: 400;
+   line-height: 1.6;
+   color: var(--grayish-blue);
+}
+
+.functions {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   gap: 4rem;
+   margin-top: 5rem;
+}
+
+.functions__title {
+   margin-bottom: 1rem;
+   color: var(--dark-grayish-blue);
+}
+
+.functions__description {
+   width: 30ch;
+   font-size: 1.6rem;
+   font-weight: 400;
+   line-height: 1.6;
+   color: var(--grayish-blue);
+}
+
+
+/* access section */
+.access {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   margin-top: 18rem;
+}
+
+.access__title {
+   color: var(--dark-grayish-blue);
+   margin-bottom: 2rem;
+}
+
+.access__description {
+   font-size: 1.6rem;
+   line-height: 1.6;
+   font-weight: 400;
+   color: var(--grayish-blue);
+   margin-bottom: 5rem;
+}
+
+
+/* section tools */
+.section-tools {
+   margin-top: 8rem;
+}
+
+.section-tools__title {
+   color: var(--dark-grayish-blue);
+}
+
+.section-tools__description {
+   margin-bottom: 8rem;
+   font-size: 1.6rem;
+   color: var(--grayish-blue);
+}
+
+.tools-container {
+   display: flex;
+   flex-direction: column;
+   gap: 5rem;
+}
+
+.tools-container__icon {
+   display: inline-block;
+   width: 5rem;
+   height: 4rem;
+   margin-bottom: 3rem;
+}
+
+/* img tools */
+.tools-container__paper {
+   background-image: url('./images/icon-blacklist.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.tools-container__letter {
+   background-image: url('./images/icon-text.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.tools-container__eye {
+   background-image: url('./images/icon-preview.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.tools-container__title {
+   margin-bottom: 2rem;
+   color: var(--dark-grayish-blue);
+}
+
+.tools-container__description {
+   font-size: 1.6rem;
+   color: var(--grayish-blue);
+}
+
+
+
+/* section company */
+.company {
+   display: flex;
+   flex-direction: column;
+   gap: 5rem;
+   margin-top: 10rem;
+}
+
+/* logos size */
+.company__icon {
+   display: inline-block;  
+   width: 16.5rem; /*17rem*/
+   height: 5.6rem; /*7rem*/
+}
+
+/* company logos */
+.company--google {
+   background-image: url('./images/logo-google.png');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.company--ibm {
+   background-image: url('./images/logo-ibm.png');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.company--ms {
+   background-image: url('./images/logo-microsoft.png');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.company--hp {  
+   background-image: url('./images/logo-hp.png');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.company--vector {
+   background-image: url('./images/logo-vector-graphics.png');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+
+/* section app */
+.app {
+   margin-top: 15rem;
+}
