@@ -37,9 +37,7 @@ header {
    background-repeat: no-repeat;
    background-size: cover;
 }
-/* .header__logo {
-   width: 100%;
-} */
+
 .header__logo-container {  
    width: 12.5rem;
    margin-top: 5rem;
@@ -261,5 +259,72 @@ header {
 
 /* section app */
 .app {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    margin-top: 15rem;
+}
+
+.app__title {
+   margin-bottom: 2rem;
+   color: var(--dark-grayish-blue);
+}
+
+.app__description {
+   width: 29.5ch;
+   font-size: 1.6rem;
+   line-height: 1.6;
+   color: var(--grayish-blue);
+}
+
+
+/* Footer */
+footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;  
+   margin-top: 15rem; 
+   background-color: hsl(201, 11%, 95%);
+}
+
+.footer__logo-container {
+   width: 6rem;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+}
+
+.footer-links {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 3rem;
+}
+
+.footer-links a {
+   color: var(--dark-grayish-blue);
+   text-decoration: none;
+}
+
+.footer-social {
+   margin-bottom: 5rem;
+}
+
+/* list styles */
+.footer-social__media {
+   display: flex;
+   gap: 4rem;
+   margin-top: 5rem;
+}
+
+.footer-social__element {
+   list-style: none;
+}
+
+.footer-social__link {
+   color: var(--dark-grayish-blue);
+}
+
+.footer-social__link i {
+   font-size: 2.8rem;
 }
