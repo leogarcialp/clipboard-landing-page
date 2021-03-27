@@ -2,7 +2,7 @@
    --strong-cyan: hsl(171, 66%, 44%);
    --light-blue: hsl(233, 100%, 69%);
    --dark-grayish-blue: hsl(210, 10%, 33%);
-   --grayish-blue: hsl(201, 11%, 66%)
+   --grayish-blue: hsl(201, 11%, 66%);
 }
 
 * {
@@ -95,6 +95,10 @@ header {
    color: white;
    text-decoration: none;
    border-radius: 3rem;
+}
+
+.links__btn:active {
+   opacity: 0.9;
 }
 
 .links__btn--mac {
@@ -393,6 +397,10 @@ footer {
    text-decoration: none;
 }
 
+.footer-links a:active {
+   color: var(--strong-cyan);
+}
+
 .footer-social {
    margin-bottom: 5rem;
 }
@@ -410,6 +418,10 @@ footer {
 
 .footer-social__link {
    color: var(--dark-grayish-blue);
+}
+
+.footer-social__link:active {
+   color: var(--strong-cyan);
 }
 
 .footer-social__link i {
