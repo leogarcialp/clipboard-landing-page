@@ -43,6 +43,14 @@ header {
    margin-top: 5rem;
 }
 
+@media (min-width: 1024px){
+   header {
+      background-image: url('./images/bg-header-desktop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
 /* main */
 .main {
    display: flex;
@@ -79,6 +87,7 @@ header {
    margin-top: 4rem;   
 }
 
+
 .links__btn {
    padding: 1.5rem;
    font-weight: 600;
@@ -90,6 +99,13 @@ header {
 
 .links__btn--mac {
    background-color: var(--light-blue);
+}
+
+@media (min-width: 1024px) {
+   .links {
+      flex-direction: row;
+      width: auto;
+   }
 }
 
 /* snippets section */
@@ -124,7 +140,7 @@ header {
 .functions {
    display: flex;
    flex-direction: column;
-   align-content: center;
+   align-items: center;
    gap: 4rem;
    margin-top: 5rem;
 }
@@ -141,6 +157,26 @@ header {
    font-weight: 400;
    line-height: 1.6;
    color: var(--grayish-blue);
+}
+
+@media (min-width:1024px) {
+   .snippets__split {
+      display: flex;
+      gap: 12rem;
+   }
+   .snippets__img-container {
+      max-width: 70rem;
+      margin-left: -34rem;
+   }
+   .snippets__description {
+      max-width: 60ch;
+   }
+   .functions {
+      text-align: left;      
+   }
+   .functions__description {
+      max-width: 33ch;
+   }
 }
 
 
@@ -169,6 +205,15 @@ header {
 .access__img-container {
    min-width: 30rem;
    max-width: 45rem;
+}
+
+@media (min-width:1024px) {
+   .access__img-container {
+      max-width: 70rem;
+   }
+   .access__description {
+      max-width: 60ch;
+   }
 }
 
 
@@ -227,6 +272,21 @@ header {
 .tools-container__description {
    font-size: 1.6rem;
    color: var(--grayish-blue);
+}
+
+@media (min-width:1024px) {
+   .section-tools {
+      margin-bottom: 8rem;
+   }
+   .tools-container {
+      flex-direction: row;
+   }
+   .tools-container__tool {
+      width: 33%;
+   }
+   .tools-container__description {
+      max-width: 34ch;
+   }
 }
 
 
