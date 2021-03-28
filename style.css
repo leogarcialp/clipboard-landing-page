@@ -110,6 +110,10 @@ header {
       flex-direction: row;
       width: auto;
    }
+
+   .links__btn {
+      padding: 1.5rem 3rem;
+   }
 }
 
 /* snippets section */
@@ -368,6 +372,11 @@ header {
    color: var(--grayish-blue);
 }
 
+.attribution {
+   margin-top: 5rem;
+   font-size: 1.3rem;
+}
+
 
 /* Footer */
 footer {
@@ -428,6 +437,7 @@ footer {
    font-size: 2.8rem;
 }
 
+
 @media (min-width: 768px){
    footer {
       flex-direction: row;
@@ -450,6 +460,8 @@ footer {
       gap: 2rem;
    }
 }
+
+
 /* I couldn't place the links as the layout :( */
 
 
